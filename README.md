@@ -34,7 +34,8 @@ export PYTHONPATH=$PYTHONPATH:`pwd`:`pwd`/slim
 
 ```
 # From root directory
-curl http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_2017_11_17.tar.gz | tar -xv -C model/ --strip 1
+mkdir model
+curl http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coco_2017_11_17.tar.gz | tar -xvz -C model/ --strip 1
 ```
 
 
