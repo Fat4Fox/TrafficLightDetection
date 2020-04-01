@@ -72,3 +72,5 @@ data/real_training_data/real_data_capture/model.ckpt*
 data/real_training_data/real_data_capture/pipeline.config
 
 .DS_Store
+
+.idea/
