@@ -40,7 +40,7 @@ curl http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coc
 
 
 ### Creating TFRecord files
-
+Note: Need to check label_map.pbtxt's correctness
 ```
 python data_conversion_udacity_sim.py --output_path sim_data.record
 ```
