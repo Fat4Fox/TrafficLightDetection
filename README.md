@@ -42,11 +42,11 @@ curl http://download.tensorflow.org/models/object_detection/ssd_mobilenet_v1_coc
 ### Creating TFRecord files
 
 ```
-python object_detection/dataset_tools/create_pascal_tf_record.py --data_dir=data/sim_training_data/sim_data_capture --output_path=sim_data.record
+python data_conversion_udacity_sim.py --output_path sim_data.record
 ```
 
 ```
-python object_detection/dataset_tools/create_pascal_tf_record.py --data_dir=data/real_training_data/real_data_capture --output_path=real_data.record
+python data_conversion_udacity_real.py --output_path real_data.record
 ```
 
 
@@ -78,7 +78,7 @@ python object_detection/train.py --pipeline_config_path=config/ssd_mobilenet_v1_
 #### Saving for Inference
 
 ```
-python object_detection/export_inference_graph.py --pipeline_config_path=config/ssd_mobilenet_v1_coco_real.config --trained_checkpoint_prefix=data/real_training_data/real_data_capture/model.ckpt-25000 --output_directory=model_frozen_real/
+python object_detection/export_inference_graph.py --pipeline_config_path=config/ssd_mobilenet_v1_coco_real.config --trained_checkpoint_prefix=data/real_training_data/model.ckpt-25000 --output_directory=model_frozen_real/
 ```
 
 

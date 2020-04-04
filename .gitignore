@@ -57,6 +57,11 @@ model/model.ckpt*
 model/pipeline.config
 model/saved_model/
 
+model_frozen_real/checkpoint
+model_frozen_real/model.ckpt*
+model_frozen_real/saved_model/
+
+
 .ipynb_checkpoints
 
 data/sim_training_data/sim_data_capture/checkpoint
@@ -65,12 +70,13 @@ data/sim_training_data/sim_data_capture/graph.pbtxt
 data/sim_training_data/sim_data_capture/model.ckpt*
 data/sim_training_data/sim_data_capture/pipeline.config
 
-data/real_training_data/real_data_capture/checkpoint
-data/real_training_data/real_data_capture/events.*
-data/real_training_data/real_data_capture/graph.pbtxt
-data/real_training_data/real_data_capture/model.ckpt*
-data/real_training_data/real_data_capture/pipeline.config
+data/real_training_data/checkpoint
+data/real_training_data/events.*
+data/real_training_data/graph.pbtxt
+data/real_training_data/model.ckpt*
+data/real_training_data/pipeline.config
 
 .DS_Store
 
 .idea/
+venv/
